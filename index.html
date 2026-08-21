@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+Lucro Real | Motorista por Aplicativo — São Paulo
+</title>
+
+
+<!-- =========================================================
+     FONTES
+     Manrope = títulos e números
+     Inter   = textos e informações
+     ========================================================= -->
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   CORES
+   ========================================================= */
+
+:root {
+
+    --azul-escuro: #0B1F33;
+
+    --azul-profundo: #071725;
+
+    --azul-petroleo: #126E82;
+
+    --branco: #FFFFFF;
+
+    --fundo: #F4F7FA;
+
+    --texto: #182B3A;
+
+    --texto-suave: #657786;
+
+    --borda: #DCE4EA;
+
+
+    /* ALTA DEMANDA */
+
+    --verde: #16865A;
+
+    --verde-escuro: #0D6845;
+
+    --verde-claro: #EAF7F1;
+
+    --verde-fundo: #F5FCF8;
+
+
+    /* BAIXA DEMANDA */
+
+    --amarelo: #E5B52F;
+
+    --amarelo-escuro: #A87900;
+
+    --amarelo-claro: #FFF7D9;
+
+    --amarelo-fundo: #FFFDF4;
+
+
+    /* TIPOGRAFIA */
+
+    --fonte-titulo: 'Manrope', sans-serif;
+
+    --fonte-texto: 'Inter', sans-serif;
+
+
+    /* SOMBRAS */
+
+    --sombra:
+        0 12px 35px rgba(11,31,51,.10);
+
+    --sombra-suave:
+        0 6px 20px rgba(11,31,51,.06);
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: var(--fonte-texto);
+
+    background: var(--fundo);
+
+    color: var(--texto);
+
+    min-height: 100vh;
+
+    padding-bottom: 125px;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.header {
+
+    background:
+
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(18,110,130,.30),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--azul-profundo),
+            var(--azul-escuro) 55%,
+            #102A43
+        );
+
+    color: var(--branco);
+
+    padding: 48px 20px 44px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.header::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    right: -130px;
+
+    bottom: -210px;
+
+    border:
+        1px solid
+        rgba(229,181,47,.25);
+
+    border-radius: 50%;
+}
+
+
+.header-content {
+
+    width: min(1050px,94%);
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.brand-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    border-radius: 15px;
+
+    color: var(--amarelo);
+}
+
+
+.brand-icon svg {
+
+    width: 34px;
+
+    height: 34px;
+}
+
+
+.brand-name {
+
+    font-family:
+        var(--fonte-titulo);
+
+    font-size:
+        clamp(31px,6vw,49px);
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    line-height: 1;
+}
+
+
+.brand-name span {
+
+    color: var(--amarelo);
+}
+
+
+.tagline {
+
+    margin-top: 14px;
+
+    color: #D9E4EC;
+
+    font-size:
+        clamp(14px,3vw,18px);
+
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+.location {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 22px;
+
+    padding: 9px 15px;
+
+    border:
+        1px solid
+        rgba(229,181,47,.45);
+
+    border-radius: 30px;
+
+    color: #F7DC8B;
+
+    background:
+        rgba(229,181,47,.08);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.container {
+
+    width: min(1050px,94%);
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   AVISO METODOLÓGICO
+   ========================================================= */
+
+.methodology {
+
+    margin-top: -18px;
+
+    position: relative;
+
+    z-index: 5;
+
+    background: var(--branco);
+
+    border:
+        1px solid
+        var(--borda);
+
+    border-left:
+        5px solid
+        var(--amarelo);
+
+    border-radius: 13px;
+
+    padding: 25px 27px;
+
+    box-shadow:
+        var(--sombra);
+}
+
+
+.methodology-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 11px;
+}
+
+
+.methodology-icon {
+
+    color:
+        var(--amarelo-escuro);
+}
+
+
+.methodology-icon svg {
+
+    width: 23px;
+
+    height: 23px;
+}
+
+
+.methodology h2 {
+
+    font-family:
+        var(--fonte-titulo);
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    color:
+        var(--azul-escuro);
+
+    letter-spacing: .2px;
+}
+
+
+.methodology p {
+
+    color:
+        var(--texto-suave);
+
+    line-height: 1.75;
+
+    font-size: 13px;
+}
+
+
+.methodology strong {
+
+    color:
+        var(--azul-escuro);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SEÇÃO
+   ========================================================= */
+
+.section {
+
+    padding-top: 45px;
+}
+
+
+.section-heading {
+
+    margin-bottom: 24px;
+}
+
+
+.eyebrow {
+
+    text-transform: uppercase;
+
+    color:
+        var(--azul-petroleo);
+
+    font-size: 10px;
+
+    letter-spacing: 1.7px;
+
+    font-weight: 800;
+
+    margin-bottom: 7px;
+}
+
+
+.section-heading h2 {
+
+    font-family:
+        var(--fonte-titulo);
+
+    color:
+        var(--azul-escuro);
+
+    font-size:
+        clamp(24px,5vw,33px);
+
+    font-weight: 800;
+
+    letter-spacing: -.9px;
+
+    line-height: 1.15;
+}
+
+
+.section-heading p {
+
+    color:
+        var(--texto-suave);
+
+    margin-top: 9px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   GRID DE CARDS
+   ========================================================= */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 19px;
+}
+
+
+/* =========================================================
+   CARD BASE
+   ========================================================= */
+
+.card {
+
+    background:
+        var(--branco);
+
+    border:
+        1px solid
+        var(--borda);
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        var(--sombra-suave);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        var(--sombra);
+}
+
+
+/* =========================================================
+   🟢 ALTA DEMANDA
+   CARDS VERDES
+   ========================================================= */
+
+.card.alta {
+
+    background:
+        var(--verde-fundo);
+
+    border-color:
+        #CDE9DB;
+}
+
+
+.card.alta::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 6px;
+
+    background:
+        var(--verde);
+}
+
+
+.card.alta .card-icon {
+
+    background:
+        var(--verde-claro);
+
+    color:
+        var(--verde-escuro);
+}
+
+
+.card.alta .demand {
+
+    background:
+        var(--verde-claro);
+
+    color:
+        var(--verde-escuro);
+}
+
+
+.card.alta .value {
+
+    color:
+        var(--verde-escuro);
+}
+
+
+.card.alta .reference-line span {
+
+    background:
+        var(--verde);
+}
+
+
+/* =========================================================
+   🟡 BAIXA DEMANDA
+   CARDS AMARELOS
+   ========================================================= */
+
+.card.baixa {
+
+    background:
+        var(--amarelo-fundo);
+
+    border-color:
+        #F0DEA1;
+}
+
+
+.card.baixa::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 6px;
+
+    background:
+        var(--amarelo);
+}
+
+
+.card.baixa .card-icon {
+
+    background:
+        var(--amarelo-claro);
+
+    color:
+        var(--amarelo-escuro);
+}
+
+
+.card.baixa .demand {
+
+    background:
+        var(--amarelo-claro);
+
+    color:
+        var(--amarelo-escuro);
+}
+
+
+.card.baixa .value {
+
+    color:
+        var(--amarelo-escuro);
+}
+
+
+.card.baixa .reference-line span {
+
+    background:
+        var(--amarelo);
+}
+
+
+/* =========================================================
+   TOPO DO CARD
+   ========================================================= */
+
+.card-top {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+
+    gap: 15px;
+}
+
+
+.card-icon {
+
+    width: 54px;
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+}
+
+
+.card-icon svg {
+
+    width: 28px;
+
+    height: 28px;
+}
+
+
+.demand {
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+
+    font-weight: 800;
+
+    padding: 8px 11px;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   TEXTO DO CARD
+   ========================================================= */
+
+.card h3 {
+
+    margin-top: 24px;
+
+    font-family:
+        var(--fonte-titulo);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color:
+        var(--azul-escuro);
+}
+
+
+.value {
+
+    margin-top: 10px;
+
+    font-family:
+        var(--fonte-titulo);
+
+    font-size:
+        clamp(38px,7vw,48px);
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+.unit {
+
+    margin-top: 9px;
+
+    color:
+        var(--texto-suave);
+
+    font-size: 11px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   BARRA DE REFERÊNCIA
+   ========================================================= */
+
+.reference-bar {
+
+    margin-top: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.reference-line {
+
+    height: 5px;
+
+    flex: 1;
+
+    background:
+        #E4EBEF;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.reference-line span {
+
+    display: block;
+
+    width: 90%;
+
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+
+.reference-label {
+
+    font-size: 9px;
+
+    color:
+        var(--texto-suave);
+
+    white-space:
+        nowrap;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BLOCO LUCRO REAL
+   ========================================================= */
+
+.concept {
+
+    margin-top: 36px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--azul-escuro),
+            #102A43
+        );
+
+    color:
+        white;
+
+    border-radius: 19px;
+
+    padding: 32px;
+
+    box-shadow:
+        var(--sombra);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.concept::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+
+    height: 230px;
+
+    right: -105px;
+
+    top: -115px;
+
+    border:
+        1px solid
+        rgba(229,181,47,.23);
+
+    border-radius: 50%;
+}
+
+
+.concept-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.concept-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(229,181,47,.12);
+
+    color:
+        var(--amarelo);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.concept-icon svg {
+
+    width: 25px;
+
+    height: 25px;
+}
+
+
+.concept h2 {
+
+    font-family:
+        var(--fonte-titulo);
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    letter-spacing: -.5px;
+}
+
+
+.concept p {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 18px;
+
+    color:
+        #D6E1E8;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CUSTOS
+   ========================================================= */
+
+.costs {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+
+    margin-top: 23px;
+}
+
+
+.cost {
+
+    background:
+        rgba(255,255,255,.055);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    padding: 13px 8px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color:
+        #DCE5EA;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+.footer {
+
+    text-align: center;
+
+    padding:
+        30px 10px 20px;
+
+    color:
+        #84939E;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+}
+
+
+.footer strong {
+
+    font-family:
+        var(--fonte-titulo);
+
+    color:
+        var(--azul-escuro);
+}
+
+
+/* =========================================================
+   MENU INFERIOR FIXO
+   ========================================================= */
+
+.bottom-menu {
+
+    position: fixed;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+    height: 110px;
+
+    background:
+        rgba(255,255,255,.99);
+
+    border-top:
+        1px solid
+        #D6E0E7;
+
+    box-shadow:
+        0 -9px 32px
+        rgba(11,31,51,.14);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    z-index: 9999;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.bottom-menu a {
+
+    text-decoration: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    color:
+        var(--texto-suave);
+
+    font-family:
+        var(--fonte-texto);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    transition:
+        background .2s ease,
+        color .2s ease;
+}
+
+
+.bottom-menu a:hover {
+
+    background:
+        #F4F7FA;
+
+    color:
+        var(--azul-escuro);
+}
+
+
+/* =========================================================
+   🟨 IMAGENS DOS LINKS — GRANDES
+   ========================================================= */
+
+.bottom-menu img {
+
+    width: 60px;
+
+    height: 60px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LINK ATIVO
+   ========================================================= */
+
+.bottom-menu .active {
+
+    color:
+        var(--azul-escuro);
+}
+
+
+.bottom-menu .active::after {
+
+    content: "";
+
+    width: 5px;
+
+    height: 5px;
+
+    background:
+        var(--amarelo);
+
+    border-radius: 50%;
+
+    margin-top: 1px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width:700px) {
+
+    .header {
+
+        padding:
+            35px 15px 34px;
+    }
+
+
+    .container {
+
+        width: 92%;
+    }
+
+
+    .methodology {
+
+        padding: 20px;
+    }
+
+
+    .cards {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .costs {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .concept {
+
+        padding: 24px;
+    }
+
+
+    .bottom-menu {
+
+        height: 105px;
+    }
+
+
+    .bottom-menu img {
+
+        width: 58px;
+
+        height: 58px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    .brand-name {
+
+        font-size: 29px;
+    }
+
+
+    .value {
+
+        font-size: 36px;
+    }
+
+
+    .bottom-menu img {
+
+        width: 54px;
+
+        height: 54px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     CABEÇALHO
+     ========================================================= -->
+
+<header class="header">
+
+    <div class="header-content">
+
+
+        <div class="brand">
+
+            <div class="brand-icon">
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.8"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+
+                    <path d="M4 19V5"/>
+
+                    <path d="M4 19H21"/>
+
+                    <path d="M7 15l4-5 3 3 6-7"/>
+
+                </svg>
+
+            </div>
+
+
+            <div class="brand-name">
+
+                LUCRO <span>REAL</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="tagline">
+
+            Referência de rentabilidade para
+            motoristas por aplicativo
+
+        </div>
+
+
+        <div class="location">
+
+            <svg width="15"
+                 height="15"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+
+                <circle cx="12"
+                        cy="10"
+                        r="2.5"/>
+
+            </svg>
+
+            São Paulo — SP
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+<!-- =========================================================
+     AVISO METODOLÓGICO
+     ========================================================= -->
+
+<section class="methodology">
+
+
+    <div class="methodology-header">
+
+
+        <div class="methodology-icon">
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+                <circle cx="12"
+                        cy="12"
+                        r="9"/>
+
+                <path d="M12 10v6"/>
+
+                <path d="M12 7h.01"/>
+
+            </svg>
+
+        </div>
+
+
+        <h2>
+
+            CRITÉRIO DE REFERÊNCIA
+
+        </h2>
+
+    </div>
+
+
+    <p>
+
+        As informações apresentadas neste site são baseadas no
+        <strong>custo médio do motorista por aplicativo</strong>
+        e nas <strong>variações de mercado</strong> que influenciam
+        diretamente na lucratividade real da atividade.
+
+    </p>
+
+
+    <p style="margin-top:8px;">
+
+        Os valores são <strong>referências mínimas de aceitabilidade</strong>
+        e podem variar conforme combustível, manutenção, trânsito,
+        demanda, região, horário, veículo e demais custos operacionais.
+
+    </p>
+
+
+</section>
+
+
+<!-- =========================================================
+     CARDS
+     ========================================================= -->
+
+<section class="section">
+
+
+    <div class="section-heading">
+
+
+        <div class="eyebrow">
+
+            PARÂMETROS DE REFERÊNCIA
+
+        </div>
+
+
+        <h2>
+
+            Quanto uma corrida precisa render?
+
+        </h2>
+
+
+        <p>
+
+            Avalie a rentabilidade considerando
+            quilometragem e tempo.
+
+        </p>
+
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- =================================================
+             🟢 ALTA DEMANDA — CARD VERDE
+             ================================================= -->
+
+        <article class="card alta">
+
+
+            <div class="card-top">
+
+
+                <div class="card-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.8"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <circle cx="5"
+                                cy="19"
+                                r="2"/>
+
+                        <circle cx="19"
+                                cy="5"
+                                r="2"/>
+
+                        <path d="M7 17L17 7"/>
+
+                        <path d="M10 7h7v7"/>
+
+                    </svg>
+
+                </div>
+
+
+                <div class="demand">
+
+                    Alta demanda
+
+                </div>
+
+
+            </div>
+
+
+            <h3>
+
+                Valor mínimo aceitável por KM
+
+            </h3>
+
+
+            <div class="value">
+
+                R$ 3,00
+
+            </div>
+
+
+            <div class="unit">
+
+                por quilômetro
+
+            </div>
+
+
+            <div class="reference-bar">
+
+                <div class="reference-line">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="reference-label">
+
+                    referência
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             🟢 ALTA DEMANDA — CARD VERDE
+             ================================================= -->
+
+        <article class="card alta">
+
+
+            <div class="card-top">
+
+
+                <div class="card-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.8"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <circle cx="12"
+                                cy="12"
+                                r="9"/>
+
+                        <path d="M12 7v5l3 2"/>
+
+                    </svg>
+
+                </div>
+
+
+                <div class="demand">
+
+                    Alta demanda
+
+                </div>
+
+
+            </div>
+
+
+            <h3>
+
+                Valor mínimo aceitável por hora
+
+            </h3>
+
+
+            <div class="value">
+
+                R$ 60,00
+
+            </div>
+
+
+            <div class="unit">
+
+                por hora trabalhada
+
+            </div>
+
+
+            <div class="reference-bar">
+
+                <div class="reference-line">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="reference-label">
+
+                    referência
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             🟡 BAIXA DEMANDA — CARD AMARELO
+             ================================================= -->
+
+        <article class="card baixa">
+
+
+            <div class="card-top">
+
+
+                <div class="card-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.8"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M9 3L7 21"/>
+
+                        <path d="M15 3l2 18"/>
+
+                        <path d="M12 5v3"/>
+
+                        <path d="M12 11v3"/>
+
+                        <path d="M12 17v3"/>
+
+                    </svg>
+
+                </div>
+
+
+                <div class="demand">
+
+                    Baixa demanda
+
+                </div>
+
+
+            </div>
+
+
+            <h3>
+
+                Valor mínimo aceitável por KM
+
+            </h3>
+
+
+            <div class="value">
+
+                R$ 2,50
+
+            </div>
+
+
+            <div class="unit">
+
+                por quilômetro
+
+            </div>
+
+
+            <div class="reference-bar">
+
+                <div class="reference-line">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="reference-label">
+
+                    referência
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================================
+             🟡 BAIXA DEMANDA — CARD AMARELO
+             ================================================= -->
+
+        <article class="card baixa">
+
+
+            <div class="card-top">
+
+
+                <div class="card-icon">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.8"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <circle cx="12"
+                                cy="12"
+                                r="9"/>
+
+                        <path d="M12 7v5"/>
+
+                        <path d="M12 12l-3 2"/>
+
+                    </svg>
+
+                </div>
+
+
+                <div class="demand">
+
+                    Baixa demanda
+
+                </div>
+
+
+            </div>
+
+
+            <h3>
+
+                Valor mínimo aceitável por hora
+
+            </h3>
+
+
+            <div class="value">
+
+                R$ 50,00
+
+            </div>
+
+
+            <div class="unit">
+
+                por hora trabalhada
+
+            </div>
+
+
+            <div class="reference-bar">
+
+                <div class="reference-line">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="reference-label">
+
+                    referência
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     LUCRO REAL
+     ========================================================= -->
+
+<section class="concept">
+
+
+    <div class="concept-header">
+
+
+        <div class="concept-icon">
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="1.8"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+                <path d="M3 17l6-6 4 4 8-9"/>
+
+                <path d="M16 6h5v5"/>
+
+            </svg>
+
+        </div>
+
+
+        <h2>
+
+            O que significa Lucro Real?
+
+        </h2>
+
+
+    </div>
+
+
+    <p>
+
+        Para o motorista por aplicativo, o valor recebido em uma
+        corrida não representa automaticamente lucro. A rentabilidade
+        depende da relação entre o valor recebido, os quilômetros
+        percorridos e o tempo utilizado na operação.
+
+    </p>
+
+
+    <p>
+
+        Combustível, manutenção, pneus, depreciação, seguro,
+        financiamento, impostos e outros custos podem reduzir
+        significativamente o resultado final.
+
+    </p>
+
+
+    <div class="costs">
+
+
+        <div class="cost">
+            Combustível
+        </div>
+
+
+        <div class="cost">
+            Manutenção
+        </div>
+
+
+        <div class="cost">
+            Depreciação
+        </div>
+
+
+        <div class="cost">
+            Tempo
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     RODAPÉ
+     ========================================================= -->
+
+<footer class="footer">
+
+
+    <strong>
+
+        Lucro Real — Motorista por Aplicativo
+
+    </strong>
+
+
+    <br>
+
+    São Paulo — SP | 2026
+
+
+    <br><br>
+
+
+    Os valores apresentados são referências e não constituem
+    garantia de lucro ou recomendação financeira.
+
+
+</footer>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     MENU FIXO INFERIOR
+     
+     🟨 IMPORTANTE:
+     Os links e imagens abaixo estão destacados para facilitar
+     a substituição posteriormente.
+     
+     TAMANHO DAS IMAGENS: 60px
+     ========================================================= -->
+
+<nav class="bottom-menu">
+
+
+    <!-- =====================================================
+         🟨 ALTERAR LINK 1
+         🟨 ALTERAR IMAGEM 1
+         ===================================================== -->
+
+    <a
+        href="https://SEU-LINK-1.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="active"
+    >
+
+        <!-- 🟨 ALTERAR IMAGEM 1 -->
+
+        <img
+            src="https://via.placeholder.com/120/0B1F33/FFFFFF?text=01"
+            alt="Início"
+        >
+
+        <span>
+            Início
+        </span>
+
+    </a>
+
+
+
+    <!-- =====================================================
+         🟨 ALTERAR LINK 2
+         🟨 ALTERAR IMAGEM 2
+         ===================================================== -->
+
+    <a
+        href="https://SEU-LINK-2.com"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+
+        <!-- 🟨 ALTERAR IMAGEM 2 -->
+
+        <img
+            src="https://via.placeholder.com/120/0B1F33/FFFFFF?text=02"
+            alt="Calculadora"
+        >
+
+        <span>
+            Calculadora
+        </span>
+
+    </a>
+
+
+
+    <!-- =====================================================
+         🟨 ALTERAR LINK 3
+         🟨 ALTERAR IMAGEM 3
+         ===================================================== -->
+
+    <a
+        href="https://SEU-LINK-3.com"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+
+        <!-- 🟨 ALTERAR IMAGEM 3 -->
+
+        <img
+            src="https://via.placeholder.com/120/0B1F33/FFFFFF?text=03"
+            alt="Informações"
+        >
+
+        <span>
+            Informações
+        </span>
+
+    </a>
+
+
+
+    <!-- =====================================================
+         🟨 ALTERAR LINK 4
+         🟨 ALTERAR IMAGEM 4
+         ===================================================== -->
+
+    <a
+        href="https://SEU-LINK-4.com"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+
+        <!-- 🟨 ALTERAR IMAGEM 4 -->
+
+        <img
+            src="https://via.placeholder.com/120/0B1F33/FFFFFF?text=04"
+            alt="Contato"
+        >
+
+        <span>
+            Contato
+        </span>
+
+    </a>
+
+
+</nav>
+
+
+</body>
+
+</html>
+
+
